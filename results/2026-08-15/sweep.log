@@ -1,0 +1,21 @@
+[2026-08-15 18:20:21] output -> results/2026-08-15/data
+[2026-08-15 18:20:21] grid 60x60;  alpha 1.0e-02..1.0e+03;  u0 1.0e-03..1.0e+03
+[2026-08-15 18:20:21] barrier check OK: delta_eff = 0.1000, beta = 5.00, cells across coat = 10
+Successfully saved raw data to: results/2026-08-15/data/fig1_uniform.npz
+Successfully saved raw data to: results/2026-08-15/data/fig1_core_shell.npz
+Successfully saved raw data to: results/2026-08-15/data/fig1_large_u0.npz
+Successfully saved raw data to: results/2026-08-15/data/fig1_kmax_0.5_boundary.npz
+Successfully saved raw data to: results/2026-08-15/data/fig1_kmax_0.5_boundary_u58.npz
+[2026-08-15 18:20:24] Fig 1 profiles done (2.5 s)
+[2026-08-15 18:20:24] starting no-barrier sweep (dr=0.010) ...
+Starting parallel sweep over 60x60 grid using 10 CPU cores...
+[2026-08-15 19:02:59] no-barrier sweep done in 42.6 min  -> phase_diagram_data.npz
+[2026-08-15 19:02:59] starting barrier sweep (delta_b/R=0.1, Db/D=0.02, dr=0.01) ...
+[2026-08-15 19:02:59]   expect roughly 341 min based on the dr^-3 scaling from the run above
+Starting parallel sweep over 60x60 grid using 10 CPU cores...
+[2026-08-15 19:58:36] barrier sweep done in 55.6 min -> phase_barrier.npz
+[2026-08-15 19:58:36] --- headline numbers ---
+[2026-08-15 19:58:36]   low-u0 boundary  alpha(K=0.5): no barrier 11.271 | barrier 11.281   (should be ~unchanged)
+[2026-08-15 19:58:36]   high-u0 boundary u0(K=0.5) at alpha=0.104: no barrier 55.5 | barrier 548.7 -> shift 9.90
+[2026-08-15 19:58:36]   back-of-envelope 1+2*beta = 11.0
+[2026-08-15 19:58:36] ALL DONE in 98.3 min total
